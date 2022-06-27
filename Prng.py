@@ -10,16 +10,18 @@ while True:
     with open("prng-service.txt", "r+") as f:
         # Read file
         read_data = f.read()
-        print(read_data)
+        # print(read_data)
         # If line in file is “run”:
         if read_data == 'run':
             # Generate random number 
+            print("Generating random number (1-99)...")
             randNum = random.randint(1,99)
             # Erase “run” from prng-service.txt
             f.seek(0)
             f.truncate()
             # Write random number in to prng-service.txt
             f.write(str(randNum))
+            print("Random integer: ", randNum)
             # Close file 
             f.close()
             break
@@ -28,7 +30,7 @@ while True:
             # Close file 
             # f.close()
             #break
-            print("Waiting for run")
-            f.close()
+            #print("Waiting for run")
+            #f.close()
             continue
         

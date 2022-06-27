@@ -21,7 +21,7 @@ while True:
 		with open("prng-service.txt", "r+") as f:
 			# Read pseudo random number from prng-service.txt
 			read_data = f.read()
-			print("Read_data1:", read_data)
+			print("Random integer (1-99):", read_data)
 			f.close()
 
 		# Open image-service.txt
@@ -41,7 +41,7 @@ while True:
 		with open("image-service.txt", "r+") as f:
 			# Read and output image-s1ervice.txt
 			read_data2 = f.read()
-			print("Read_data2:", read_data2)
+			print("Random integer in image-service.txt:", read_data2)
 			time.sleep(5)
 			# Close image-service.txt
 			f.close
@@ -49,7 +49,7 @@ while True:
 		with open("image-service.txt", "r+") as f:
 			# Read and output image-s1ervice.txt
 			read_data3 = f.read()
-			print("Read_data3:", read_data3)
+			print("Image file path:", read_data3)
 			# Close image-service.txt
 			f.close
 		break
