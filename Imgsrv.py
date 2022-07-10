@@ -17,7 +17,7 @@ while True:
 				# Write path (ex : /users/cs361-images/{number}.jpg) to image-service.txt
 				f.seek(0)
 				f.truncate()
-				file_path = 'Users/Casey/Documents/GitHub/CS361/images/'
+				file_path = 'images/'
 				file_path+=str(num)
 				file_path+='.jpg'
 				print("Image file path: ", file_path)
